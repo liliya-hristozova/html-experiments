@@ -1,0 +1,147 @@
+/* =============================================================================
+  HTML5 element display
+========================================================================== */
+article, aside, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/* =============================================================================
+  Reset
+========================================================================== */
+html {height: 100%;}
+body {
+    height: 100%; 
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: #FFFFFF;
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+	/*background: url(../img/background_pattern.png) top left repeat;*/
+}
+
+body, html, div, p, span, 
+h1, h2, h3, h4, h5,
+table, td, tr, th, 
+ul, ol, li, dl, dt, dd, 
+form, input, fieldset, label, legend, select, textarea,
+a, img, pre{
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+.containers-color{
+    background-color: #88d8fd;
+}
+
+#wrapper{
+    margin: 0 auto;
+    width: 940px;
+    height: 700px;
+    background-image: url(../img/background.png);
+    background-repeat: repeat;
+}
+.main-header {
+    width: 940px;
+    
+}
+
+.main-header .shape {
+    width: 58px;
+    height: 63px;
+    background-color: #e04e5a;
+    float: left;
+    margin:0 23px 10px 0;
+}
+
+.main-header .shape.last{
+    float: right;
+    margin-right: 0;
+}
+
+.container1{
+    margin: 10px 0;
+    padding: 55px 0;
+}
+
+.container1 .shape {
+    width: 138px;
+    height: 103px;
+    background-color: #e04e5a;
+    float: left;
+    margin: 0 11px;
+}
+
+.container1  .shape.first{
+    margin-left: 0;
+}
+
+.container1 .shape.last{
+    margin-right: 0;
+}
+
+.container2{
+    padding: 10px;
+    margin: 10px 0;   
+}
+
+.container2 .inner-container{
+    width: 918px;
+    height: 245px;
+    background-color: #e04e5a; 
+}
+
+.container2 .inner-container .shape{
+    width:138px;
+    height: 103px;
+    background-color: #4ee077;
+    float: left;
+    margin: 10px 10px;
+}
+
+.container2 .inner-container .shape.last{
+    width: 116px;
+    height: 226px;
+    background-color: #e0cd4e;
+    float: right;
+    margin-left: 0;
+
+}
+
+.aside{
+    width: 17px;
+    height: 165px;
+    background-color: #8f4ee0;
+    float: left;
+    position: fixed;
+    left: 0;
+    top:40%;
+}
+
+.footer{
+    width: 940px;
+    height: 23px;
+    background-color: #8f4ee0;
+    position: fixed;
+    bottom: 0;
+}
+
+ 
+
+
+  
