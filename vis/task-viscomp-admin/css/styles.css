@@ -31,9 +31,11 @@ h1#branding{
     width: 226px;
     height: 32px;
     line-height: 53px;
+    margin: 0;
 }
+
 /* =============================================================================
- Sidebar-left
+ Sidebar
 ========================================================================== */
 #main-sidebar {
     background-color: #43474b;
@@ -54,27 +56,51 @@ h1#branding{
  Content
 ========================================================================== */
 #main-content {
-
+    padding: 30px 0 39px 0;
 }
 
-/*#main-content [class*="span"] {
-    background-color: red;
-}*/
-
 .card {
+    min-width: 268px;
+    min-height: 201px;
     background-color: #f6f6f6;
     border: 1px solid #aeaeae;
     border-top: none;
-    margin: 15px;
-    min-width: 268px;
-    min-height: 201px;
+    margin-bottom: 30px;
+   
 }
 
 .card h2{
     margin: 0;
     background-color: #91aa2c;
+    font-family: 'OpenSans Extrabold';
+    font-size: 16px;
     color: #ffffff;
+    padding-left: 20px;
 }
+.card-icon{
+    width: 268px;
+    height: 162px;
+}
+.dashboard{
+    background: url("../img/dashboard.png") center no-repeat;
+}
+.languages{
+    background: url("../img/languages.png") center no-repeat;
+}
+.navigation{
+    background: url("../img/navigation.png") center no-repeat;
+}
+.cms{
+    background: url("../img/cms.png") center no-repeat;
+}
+.users{
+    background: url("../img/users.png") center no-repeat;
+}
+.groups{
+    background: url("../img/groups.png") center no-repeat;
+}
+
+
 
 /* =============================================================================
  Footer
@@ -86,3 +112,12 @@ h1#branding{
 #footer p{
     line-height: 72px;
 }
+#footer a{
+    text-decoration: none;
+}
+#footer span{
+    font-family: 'Open Sans';
+    font-size: 12px;
+    color: #91aa2c;
+}
+
