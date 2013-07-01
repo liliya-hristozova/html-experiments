@@ -44,9 +44,39 @@ Container-fluid
 ========================================================================== */
 #main-sidebar {
     background-color: #43474b;
+    height: 537px;
 }
 .well{
     background-color:inherit;
+    border: none;
+    padding: 34px 16px 0;
+    margin: 0;
+}
+.nav-list {
+    padding: 0;
+    margin: 0;
+}
+.nav-list a{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 800;
+    color: #ffffff;
+    border-top: 1px solid #586471;
+    border-bottom: 1px solid #586471;
+}
+.nav-list .active a{
+    background-color: #1c2024;
+    line-height: 31px;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0.35); ;
+}
+.nav .languages li{
+    list-style-type: none;
+}
+.nav .languages a{
+    display: block;
+    border: none;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 /* =============================================================================
@@ -71,6 +101,7 @@ Container-fluid
     background-color: #91aa2c;
     font-family: 'Open Sans';
     font-size: 16px;
+    font-weight: 800;
     color: #ffffff;
     padding-left: 20px;
 }
@@ -109,6 +140,7 @@ Container-fluid
     line-height: 72px;
     font-family: 'Open Sans';
     font-size: 12px;
+    font-weight: 400;
     color:#cccccc;
 } 
 #footer span{
