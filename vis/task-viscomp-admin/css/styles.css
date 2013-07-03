@@ -47,7 +47,7 @@ Container-fluid
     font-size: 14px;
     font-weight: 800;
     height: 537px;
-    border-radius: none;
+    border-radius: 0;
     background-color: #43474b;
     padding: 34px 16px 0;
     margin: 0;
