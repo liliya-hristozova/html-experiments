@@ -84,6 +84,9 @@ Container-fluid
 .sidebar-nav .nav > .active > a {
     cursor: default;
 }
+.sidebar-nav > .nav > li:first-child > a {
+    border-top: 1px solid #586471;
+}
 .sidebar-nav .icon{
     display: inline-block;
     vertical-align: text-top;

@@ -37,8 +37,8 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li><a href="#"><i class="icon dashboard"></i>Dashboard</a></li>
-              <li><a href="#"><i class="icon languages"></i>Languages</a></li>
-              <ul class="nav nav-list">
+              <li><a href="#" data-toggle="collapse" data-target="#nav-languages"><i class="icon languages"></i>Languages</a></li>
+              <ul id="nav-languages" class="nav nav-list collapse in">
                 <li><a href="#">English Translations</a></li>
                 <li><a href="#">Bulgarien Translations</a></li>
                 <li class="active"><a href="#">Start/Restart cache</a></li>
@@ -102,6 +102,8 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- 
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/bootstrap-transition.js"></script>
