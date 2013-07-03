@@ -42,16 +42,13 @@ Container-fluid
 /* =============================================================================
  Sidebar
 ========================================================================== */
-#main-sidebar {
-    background-color: #43474b;
-    height: 537px;
-}
 .sidebar-nav{
     font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 800;
-    background-color:inherit;
-    border: none;
+    height: 537px;
+    border-radius: none;
+    background-color: #43474b;
     padding: 34px 16px 0;
     margin: 0;
 }
@@ -124,8 +121,11 @@ Container-fluid
     height: 20px;
     background-position: 0 -108px;
 }
-
-
+.sidebar-nav .icon.arrow{
+    width: 15px;
+    height: 14px;
+    background-position: -5px -129px;
+}
 /* =============================================================================
  Content
 ========================================================================== */
