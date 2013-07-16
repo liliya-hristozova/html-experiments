@@ -1,32 +1,201 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js ie7 lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js ie8 lt-ie9" lang="en"> <![endif]-->
-<!--[if IE 9]>         <html class="no-js ie9 gt-ie8" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js gt-ie8" lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Dashboard</title>
+	<title>Web page</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div id="header">
+	<div id="header" class="clearfix">
 		<h1 id="branding">
+			<a href="#"><img src="img/logo.png" alt="Logo">Dashboard</a>
 		</h1>
+		<div class="main-controls">
+			<a href="#" class="icon icon-envelope">
+				<span class="badge badge-envelope">5</span>
+			</a>
+			<a href="#" class="icon icon-massages">
+				<span class="badge badge-massages">3</span>
+			</a>
+			<a href="#" class="icon icon-user">
+				<i class="button-arrow-down"></i>
+			</a>
+		</div>
 	</div>
-	<ul>
-		<li><a href="#">HTML5</a></li>
-		<ul>
-			<li><a href="#">&ltsection&gt</a></li>
-			<li><a href="#">&ltarticle&gt</a></li>
-			<li><a href="#">&ltfigure&gt</a></li>
+	<div id="main-nav">
+		<ul class="nav nav-list">
+			<li><a href="#" class="button-arrow-down"><i class="icon html5"></i>HTML5</a></li>
+			<ul id="nav-html5" class="nav nav-list nav-dropdown">
+				<li><a href="#" class="dropdown">&lt;section&gt;</a></li>
+				<li><a href="#" class="dropdown">&lt;article&gt;</a></li>
+				<li><a href="#" class="dropdown">&lt;figure&gt;</a></li>
+			</ul>
+			<li><a href="#" class="button-arrow"><i class="icon css3"></i>CSS3</a></li>
+			<li><a href="#" class="button-arrow"><i class="icon jquery"></i>jQuery</a></li>
+			<li><a href="#" class="button-arrow"><i class="icon responsive"></i>Responsive</a></li>
+			<li><a href="#" class="button-arrow"><i class="icon cms"></i>CMS</a></li>
+			<li><a href="#" class="button-arrow"><i class="icon formmail"></i>Formmail</a></li>
+			<li><a href="#" class="button-arrow"><i class="icon epages"></i>ePages</a></li>
 		</ul>
-		<li><a href="#">CSS3</a></li>
-		<li><a href="#">jQuery</a></li>
-		<li><a href="#">Responsive</a></li>
-		<li><a href="#">CMS</a></li>
-		<li><a href="#">Formmmail</a></li>
-		<li><a href="#">ePages</a></li>
-	</ul>
-	<div id="content"></div>
+	</div>
+	<div id="main-content" class="clearfix">
+			<section class="container container-type-chats">
+				<header class="container-header clearfix">
+					<a href="#" class="container-title"><i class="icon-tasks"></i>Chats</a>
+					<div class="container-controls">
+						 <a href="#"><i class="icon icon-chevron-down"></i></a><a href="#"><i class="icon icon-wrench"></i></a><a href="#"><i class="icon icon-refresh"></i></a><a href="#"><i class="icon icon-remove"></i></a>
+					</div>
+				</header>
+				<div class="container-body">
+					<div class="message-chats">
+						<p><a href="#" class="name">Mark King</a> at Jul 25, 2012 11:09</p>
+						<p>Lorem ipsum dolor sit amet, consecteturer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<i class="photou-mark"></i>
+					</div>
+					<div class="message-chats">
+						<p class="text-right"><a href="#" class="name">Lisa Wong</a> at Jul 25, 2012 11:09</p>
+						<p class="text-right">Lorem ipsum dolor sit amet, consecteturer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<i class="photou-lisa"></i>
+					</div>
+					<div class="message-chats">
+						<p><a href="#" class="name">Mark King</a> at Jul 25, 2012 11:09</p>
+						<p>Lorem ipsum dolor sit amet, consecteturer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<i class="photou-mark"></i>
+					</div>
+					<div class="message-chats">
+						<p class="text-right"><a href="#" class="name">Richard Doe</a> at Jul 25, 2012 11:09</p>
+						<p class="text-right">Lorem ipsum dolor sit amet, consecteturer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<i class="photou-richard"></i>
+					</div>
+				</div>
+				<footer class="container-footer">
+				</footer>
+			</section>
+			<section class="container container-type-list clearfix">
+				<header class="container-header">
+					<a href="#" class="container-title"><i class="icon-tasks"></i>To Do List</a>
+					<div class="container-controls">
+						<a href="#"><i class="icon icon-chevron-down"></i></a><a href="#"><i class="icon icon-wrench"></i></a><a href="#"><i class="icon icon-refresh"></i></a><a href="#"><i class="icon icon-remove"></i></a>
+					</div>
+				</header>
+				<table class="container-body">
+					<tr>
+						<td><a href="#">Project Anual Meeting.</a></td>
+						<td><a href="#" class="label label-red">Today</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Project Status Update.</a></td>
+						<td><a href="#" class="label label-red">4.30PM</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Upgrade web server OS.</a></td>
+						<td><a href="#" class="label label-green">13 Dec</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Weekly technical support report.</a></td>
+						<td><a href="#" class="label label-green">11 Dec</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Project Anual Meeting.</a></td>
+						<td><a href="#" class="label label-red">Today</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Project Status Update.</a></td>
+						<td><a href="#" class="label label-red">4.30PM</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Project Status Update.</a></td>
+						<td><a href="#" class="label label-red">4.30PM</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Prepare project materials.</a></td>
+						<td><a href="#"class="label label-orange">09 Feb</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Project Status Update.</a></td>
+						<td><a href="#" class="label label-red">4.30PM</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Project Anual Meeting.</a></td>
+						<td><a href="#" class="label label-red">Today</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Prepare project materials.</a></td>
+						<td><a href="#" class="label label-orange">09 Feb</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Update promotion rates.</a></td>
+						<td><a href="#" class="label label-grey">12 May</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Project Status Update.</a></td>
+						<td><a href="#"class="label label-red">4.30PM</a></td>
+						<a href="#">Vie all todo list</a>
+					</tr>
+				</table>
+			</section>
+			<section class="container container-type-tabs">
+				<header class="container-header clearfix">
+					<a href="#" class="container-title"><i class="icon-align-justify"></i>Tabs</a>
+					<div class="container-controls">
+					</div>
+				</header>
+				<div class="container-body">
+					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit preasent luptatum zzril delenit augue dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit preasent luptatum zzril delenit augue dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				</div>
+			</section>
+			<section class="container container-type-alerts">
+				<header class="container-header clearfix">
+					<a href="#" class="container-title "><i class="icon-align-justify"></i>Alerts</a>
+					<div class="container-controls">
+						<a href="#"><i class="icon icon-chevron-down"></i></a><a href="#"><i class="icon icon-wrench"></i></a><a href="#"><i class="icon icon-refresh"></i></a><a href="#"><i class="icon icon-remove"></i></a>
+					</div>
+				</header>
+				<div class="container-body">
+					<div class="alerts alerts-warning"><strong>Warning!</strong>Your monthli is traffic limit.</div>
+					<div class="alerts alerts-success"><strong>Success!</strong>The page has been added.</div>
+					<div class="alerts alerts-info"><strong>Info!</strong>You have 198 unread messages.</div>
+					<div class="alerts alerts-error"><strong>Error!</strong>The daily cronjob has failed.</div>
+				</div> 
+			</section>
+			<section class="container container-type-notifications">
+				<header class="container-header clearfix">
+					<a href="#" class="container-title"><i class="icon-align-justify"></i>Inline Notifications</a>
+					<div class="container-controls">
+						<a href="#"><i class="icon icon-chevron-down"></i></a><a href="#"><i class="icon icon-wrench"></i></a><a href="#"><i class="icon icon-refresh"></i></a><a href="#"><i class="icon icon-remove"></i></a>
+					</div>
+				</header>
+			 	<div class="container-body clearfix">
+					<div class="notifications notifications-error">
+						<h3>Error!</h3>
+						<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus amet fermentum.
+						</p>
+						<button class="btn btn-red" type="submit">Do this</button>
+						<button class="btn btn-white" type="submit">Or do this</button>
+					</div>
+					<div class="notifications notifications-info">
+						<h3>Info!</h3>
+						<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus amet fermentum.
+						</p>
+						<button class="btn btn-blue" type="submit">Do this</button>
+						<button class="btn btn-white" type="submit">Or do this</button>
+					</div>
+						<div class="notifications notifications-success">
+						<h3>Success!</h3>
+						<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus amet fermentum.
+						</p>
+						<button class="btn btn-green" type="submit">Do this</button>
+						<button class="btn btn-white" type="submit">Or do this</button>
+					</div>
+					<div class="notifications notifications-warning">
+						<h3>Warning!</h3>
+						<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus amet fermentum.
+						</p>
+						<button class="btn btn-yellow" type="submit">Do this</button>
+						<button class="btn btn-white" type="submit">Or do this</button>
+					</div>
+				</div>
+			</section>	
+	</div>
 </body>
-</html>&ltsection
+</html>
