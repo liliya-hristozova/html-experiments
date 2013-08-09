@@ -17,9 +17,8 @@ body {
     font-size: 100%;
     -webkit-text-size-adjust: 100%; 
     -ms-text-size-adjust: 100%;
-	  background: url(../img/background_pattern.png);
+	background: url(../img/background_pattern.png);
     background-repeat: repeat;
-   /* background-color: pink;*/
 }
 
 body, html, div, p, span, 
@@ -44,6 +43,10 @@ a, img, pre {
     line-height: 0;
     height: 0;
 }
+.clearfix {
+    *zoom: 1;
+}
+
 
 * html .clearfix {
     height: 1%;
@@ -51,75 +54,67 @@ a, img, pre {
 
 #wrapper {
     zoom: 1;
+    width: 1100px; 
     margin: 0 auto;
     padding-bottom: 53px;
-    width: 1100px;  
+     
 }
 .btn {
     text-decoration: none;
     display: block;
-    text-align: center;
-    float: right;
     font-family: 'Muli';
     color: #ffffff;
     text-shadow: 1px 0 1px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+    float: right;
+    
+}
+a {
+    text-decoration: none;
 }
 
 /* =============================================================================
   Logo & nav-bar
 ========================================================================== */
 #header{
-    padding: 20px 0;
+    padding: 20px 0 20px 51px;
 }
-
-.logo{
+#header .left{
+    float: left;
+    width: 794px;
+}
+#branding{
     width: 205px;
     height: 61px;
     float: left;
-    padding-left: 51px;
 }
-.nav-bar{
-    padding-top: 30px;
-    float: left;
-}
-.nav-bar .nav {
-    list-style-type: none;
-    display: inline;
-    float: left; 
+nav{
+    margin-top: 30px;
+    text-align: right;
 }
 
-.nav-bar li {
-    display: inline-block;
-    float: left;
-}
-
- .nav-bar .nav a {
-    text-decoration: none;
-    display: block;
+nav a{
     color: #5c5b5b;
-    padding: 0 14px; 
     font-family: 'Muli';
     font-size: 18px;
     text-shadow: -1px -1px 1px rgba(221, 221, 221, 0.75);
+    padding: 0 14px; 
 }
 
-.nav-bar .nav a:hover, 
-.nav-bar .nav .active a {
+nav a:hover, 
+nav .active {
     color: #b1b1b1;
     opacity: 1; 
 }
 
-.nav-bar .nav .active a {
+nav .active{
     background-color: #c34b1f;
     color: #ffffff;
     padding: 5px;
 }
 
 .btn-join {
-    width: 89px;
-    height: 34px;
-    line-height: 30px;
-    margin-top: 26px;
+    display: inline-block;
     font-size: 18px;
     background: #2475ad; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -131,10 +126,15 @@ a, img, pre {
     background: -ms-linear-gradient(top,  #2475ad 0%,#2475ad 0%,#207cca 100%,#208ac7 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #2475ad 0%,#2475ad 0%,#207cca 100%,#208ac7 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2475ad', endColorstr='#208ac7',GradientType=0 ); /* IE6-8 */
+    margin-top: 23px;
+    padding: 6px 30px;
 }
 
 .gt-ie8 .btn {
-    filter:none;
+    filter: none;
+}
+.right{
+    float: right;
 }
 
 /* =============================================================================
@@ -142,7 +142,6 @@ a, img, pre {
 ========================================================================== */
 
 .content {
-    width: 1001px;
     background-color: #ffffff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
     padding: 0 48px 0 51px;
@@ -194,18 +193,14 @@ a, img, pre {
     /* IE 7 Fix for overflow hidden with relative content */
     position: relative;
 }
-
 .slider-content {
     position: relative;
 }
-
 .slider-content li {
     list-style-type: none;
     float: left;
     display: block;
 }
-
-
 .banner-buttons {
     width: 168px;
     height: 95px;
@@ -215,12 +210,23 @@ a, img, pre {
     right: -13px;
 }
 .banner-buttons-circle {
-    width: 71px;
-    height: 13px;
-    background: url("../img/buttons-ellipses.png") no-repeat;
     position: absolute;
     bottom: 28px;
     right: 38px;
+    
+}
+.banner-buttons-circle a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    z-index: 5;
+}
+.banner-buttons-circle a:hover,
+.banner-buttons-circle .active{
+    background-color: #2475ad;
 }
 
 .banner-buttons h3 {
@@ -235,12 +241,12 @@ a, img, pre {
 .banner-text {
     width: 422px;
     background: url("../img/banner-text2.png") repeat;
+    color: #ffffff;
+    text-shadow: 1px 0 1px rgba(255, 255, 255, 0.75);
     position: absolute;
     bottom: 39px;
     left: 17px;
-    color: #ffffff;
     padding: 23px 23px 15px 15px;
-    text-shadow: 1px 0 1px rgba(255, 255, 255, 0.75);
 }
 .banner-text-plus {
     width: 55px;
@@ -262,7 +268,6 @@ a, img, pre {
     padding: 16px 0 25px 0;
 }
 .banner-text a {
-    text-decoration: none;
     font-family: 'Muli';
     font-size: 14px;
     font-style: italic;
@@ -273,13 +278,12 @@ a, img, pre {
 ========================================================================== */
 .box-info {
     width: 290px;
-    height: 278px;
     background-color: #ffffff; 
     border: 1px solid #eaeae8;
     float: left;
-    margin: 22px 0 45px 32px;
-    padding: 19px 10px 52px;
     position: relative;
+    padding: 19px 10px 52px;
+    margin: 22px 0 45px 32px;
 }
 .box-info:first-child {
     margin-left: 0;
@@ -289,11 +293,11 @@ a, img, pre {
     font-size: 24px;
     color:#6b6969;
     text-shadow: 1px 0 1px rgba(255, 255, 255, 0.75);
-    padding-bottom: 5px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     border-bottom: 2px solid #2475ad;
+    padding-bottom: 5px;
 }
 .picture-box {
     width: 290px;
@@ -313,14 +317,12 @@ a, img, pre {
     margin: 0 6px 10px 0;
 }
 .box-info .btn-more {
-    width: 75px;
-    height: 24px;
-    line-height: 20px;
     font-size: 13px;
     background: #c34b1f;
     position: absolute;
     bottom:14px;
-    right: 12px;  
+    right: 12px;
+    padding: 6px 20px;  
 }
 
 .box-bottom {
@@ -338,7 +340,6 @@ a, img, pre {
   Featured Pros
 ========================================================================== */
 #featured-pros { 
-    width: 955px;
     background: url(../img/pattern-featured.png) repeat;
     padding: 9px 18px 22px 30px;
     position: relative;
@@ -376,8 +377,9 @@ a, img, pre {
     line-height: 25px;
     font-size: 16px;
     background: #98a408;
+    padding: 0 12px;  
     margin-top: -39px;
-    padding: 0 12px;    
+      
 }
 .btn-featured .arrow-icon{
     display: inline-block;
@@ -389,7 +391,7 @@ a, img, pre {
 }
 #featured-pros .slider-featured{
     overflow: hidden;
-      /* IE 7 Fix for overflow hidden with relative content */
+    /* IE 7 Fix for overflow hidden with relative content */
     position: relative;
     margin-top: 22px;
 }
@@ -424,7 +426,6 @@ a, img, pre {
     margin-top: 2px;
 }
 .info a {
-    text-decoration: none;
     font-family: 'Quattrocento Sans';
     font-size: 13px;
     color: #3a3a3a;
@@ -484,8 +485,7 @@ a, img, pre {
     color: #6b6969;
     text-shadow: 1px 0 1px rgba(255, 255, 255, 0.75);
 }
-.designer-info a {
-    text-decoration: none;
+.designer-info a { 
     font-family: 'Quattrocento Sans';
     font-size: 13px;
     color: #2475ad;
@@ -515,21 +515,21 @@ a, img, pre {
   Footer
 ========================================================================== */
 #footer {
-  width: 1020px;
-  background-color: #ffffff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  margin: 42px 0 53px 0;
-  padding: 39px 29px 39px 51px;
-  font-family: 'Muli';
-  font-size: 13px;
-  color: #000000;
-  text-shadow: 1px 0 1px rgba(255, 255, 255, 0.75);
+    width: 1020px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    font-family: 'Muli';
+    font-size: 13px;
+    color: #000000;
+    text-shadow: 1px 0 1px rgba(255, 255, 255, 0.75);
+    padding: 39px 29px 39px 51px;
+    margin: 42px 0 53px 0;
 }
 #footer .copy-left{
-  float: left;
+    float: left;
 }
 #footer .right{
-  float: right
+    float: right
 }
 
 
