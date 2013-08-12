@@ -29,6 +29,7 @@ form, input, fieldset, label, legend, select, textarea,
 a, img, pre {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 /* =============================================================================
@@ -144,7 +145,7 @@ nav .active{
 .content {
     background-color: #ffffff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-    padding: 0 48px 0 51px;
+    padding: 11px 48px 19px 51px;
     position: relative;
 }
 .content .icon {
@@ -172,9 +173,11 @@ nav .active{
     background-position: -63px 0;
 }
 .social-icons {
-    height: 45px;
-    line-height: 58px;
+    line-height: 30px;
     text-align: right;
+}
+.ie7 .social-icons {
+    padding-bottom: 13px;
 }
 
 .content  a:hover .icon {
@@ -276,6 +279,9 @@ nav .active{
 /* =============================================================================
   CTA
 ========================================================================== */
+#cta{
+    margin-bottom: 40px;
+}
 .box-info {
     width: 290px;
     background-color: #ffffff; 
@@ -283,7 +289,7 @@ nav .active{
     float: left;
     position: relative;
     padding: 19px 10px 52px;
-    margin: 22px 0 45px 32px;
+    margin: 22px 0 0 32px;
 }
 .box-info:first-child {
     margin-left: 0;
@@ -341,8 +347,9 @@ nav .active{
 ========================================================================== */
 #featured-pros { 
     background: url(../img/pattern-featured.png) repeat;
-    padding: 9px 18px 22px 30px;
     position: relative;
+    padding: 9px 18px 22px 30px;
+    margin-bottom: 38px;
 }
 #featured-pros .arrow{
     display: inline-block;
@@ -362,17 +369,17 @@ nav .active{
     left: auto;
     right: -88px;
 }
-.featured {
+#featured-pros .featured {
     border-bottom: 2px solid #2475ad;
 }
-.featured h4 {
+#featured-pros h4 {
     font-family: 'Muli';
     font-size: 24px;
     color: #6b6969;
     text-shadow: 1px 0 1px rgba(255, 255, 255, 0.75);
     padding-bottom: 10px;  
 }
-.featured .btn-featured {
+#featured-pros .btn-featured {
     height: 27px;
     line-height: 25px;
     font-size: 16px;
@@ -381,7 +388,7 @@ nav .active{
     margin-top: -39px;
       
 }
-.btn-featured .arrow-icon{
+#featured-pros .arrow-icon-btn{
     display: inline-block;
     width: 8px;
     height: 14px;
@@ -390,27 +397,38 @@ nav .active{
     margin-left: 16px;
 }
 #featured-pros .slider-featured{
+    height: 67px;
     overflow: hidden;
     /* IE 7 Fix for overflow hidden with relative content */
     position: relative;
     margin-top: 22px;
 }
-.slider-featured .info {
+#featured-pros .slider-content{
+    position: relative;
+}
+
+#featured-pros li{
+    list-style-type: none;
+    float: left;
+    display: block;
+}
+
+#featured-pros .info {
     width: 215px;
     float: left;
     margin-left: 31px;
 }
-.info:first-child{
+#featured-pros .info:first-child{
   margin-left: 0;
 }
-.info img {
+#featured-pros img {
     width: 77px; 
     height: 66px;
     float: left;
     box-shadow: 5px 0 5px rgba(0, 0, 0, 0.2);
     margin-right: 16px;
 }
-.info h5 {
+#featured-pros h5 {
     font-family: 'Muli';
     font-size: 18px;
     line-height: 17px;
@@ -418,20 +436,20 @@ nav .active{
     text-shadow: 1px 0 1px rgba(255, 255, 255, 0.75);
     margin-bottom: 5px;
 }
-.info p {
+#featured-pros p {
     font-family: 'Quattrocento Sans';
     font-size: 13px;
     color: #3a3a3a;
     text-shadow: 1px 0 1px rgba(255, 255, 255, 0.75);
     margin-top: 2px;
 }
-.info a {
+#featured-pros a {
     font-family: 'Quattrocento Sans';
     font-size: 13px;
     color: #3a3a3a;
     text-shadow: 1px 0 1px rgba(255, 255, 255, 0.75);
 }
-.info .arrow-icons{
+#featured-pros .arrow-icons{
     display: inline-block;
     width: 8px;
     height: 9px;
@@ -459,10 +477,9 @@ nav .active{
 }
 .designer-info {
     width: 304px;
-    min-height: 175px;
     border-top: 2px dashed #bcb8b8;
     border-bottom: 2px dashed #bcb8b8;
-    padding: 20px 15px 22px 12px;
+    padding: 20px 15px 25px 12px;
 }
 .designer-info img {
     width: 140px;
@@ -489,6 +506,7 @@ nav .active{
     font-family: 'Quattrocento Sans';
     font-size: 13px;
     color: #2475ad;
+    font-weight: bold;
     text-shadow: 1px 0 1px rgba(255, 255, 255, 0.75);
 }
 .box-bottom1 {
