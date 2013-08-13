@@ -13,6 +13,22 @@
         <link href='http://fonts.googleapis.com/css?family=Muli:400italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/styles3.css">
         <script src="js/modernizr.custom.34536.js"></script>
+        <!-- jQuery library (served from Google) -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- bxSlider Javascript file -->
+        <script src="js/bxslider/jquery.bxslider.min.js"></script>
+        <!-- bxSlider CSS file -->
+        <link rel="stylesheet" href="js/bxslider/jquery.bxslider.css" >
+        <script>
+            $(document).ready(function(){
+                $('#featured-pros .bxslider').bxSlider({
+                    pager: false,
+                    //controls: false,
+                    nextSelector: '#featured-pros .arrows',
+                    prevSelector: '#featured-pros .arrows'
+                });
+            });
+        </script>
 	</head>
 	<body>
     	<div id="wrapper">
@@ -38,7 +54,7 @@
                 </div>
                 <section id="banner">
                     <div class="slider">
-                        <ul class="slider-content clearfix">
+                        <ul class="slider-content bxslider clearfix">
                             <li>
                                 <img src="img/banner.png" alt="Banner">
                             </li>
@@ -93,20 +109,22 @@
                     </div>  
                 </section>
                 <section id="featured-pros">
-                    <div class="arrowes">
-                            <a href="#">
-                                <i class="arrow arrow-left"></i>
-                            </a>
-                             <a href="#">
-                                <i class="arrow arrow-right"></i>
-                            </a>
-                        </div>
+                    <div class="arrows">
+<!--
+                        <a href="#">
+                            <i class="arrow arrow-left"></i>
+                        </a>
+                        <a href="#">
+                            <i class="arrow arrow-right"></i>
+                        </a>
+ -->
+                     </div>
                     <div class="featured">
                         <h4>Our Featured Professionals</h4>
                         <a href="#" class="btn btn-featured">Penantis Morbi Diam <i class="arrow-icon-btn"></i></a>
                     </div>
                     <div class="slider-featured">
-                        <ul class="slider-content clearfix">
+                        <ul class="slider-content bxslider clearfix">
                             <li>
                                 <div class="info">
                                     <img src="img/picture-phillip.png">

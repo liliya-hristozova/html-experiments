@@ -351,7 +351,8 @@ nav .active{
     padding: 9px 18px 22px 30px;
     margin-bottom: 38px;
 }
-#featured-pros .arrow{
+#featured-pros .bx-next,
+#featured-pros .bx-prev{
     display: inline-block;
     width: 23px;
     height: 35px;
@@ -360,11 +361,12 @@ nav .active{
     position: absolute;
     left: -88px;
     top: 70px;
+    text-indent: -99999px;
 }
-#featured-pros .arrow.arrow-left{
+#featured-pros .bx-prev{
     background-position: 0 0;
 }
-#featured-pros .arrow.arrow-right{
+#featured-pros .bx-next{
     background-position: -23px 0;
     left: auto;
     right: -88px;
@@ -396,12 +398,15 @@ nav .active{
     vertical-align: middle;
     margin-left: 16px;
 }
-#featured-pros .slider-featured{
+/*#featured-pros .slider-featured{
     height: 67px;
     overflow: hidden;
-    /* IE 7 Fix for overflow hidden with relative content */
+     IE 7 Fix for overflow hidden with relative content 
     position: relative;
     margin-top: 22px;
+}*/
+#featured-pros .slider-featured {
+    margin-top: 22px; 
 }
 #featured-pros .slider-content{
     position: relative;
